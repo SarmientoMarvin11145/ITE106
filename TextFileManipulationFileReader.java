@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class FileReader
+public class TextFileManipulationFileReader
 {
 	public static void main(String [] args) throws Exception{
 		
