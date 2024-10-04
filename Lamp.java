@@ -1,16 +1,13 @@
-class Lamp
+public class Lamp
 {
 	public String name;
+	public boolean isOn;
 	
-	boolean isOn;
-	
-	void turnOn(){
-		isOn = true;
-		System.out.println("Light On? " + isOn);
+	void turnOn() {
+		System.out.println("Light on? " + isOn);
 	}
 	
-	void turnOff(){
-		isOn = false;
-		System.out.println("Light Off? " + isOn);
+	void turnOff() {
+		System.out.println("Light on? " + isOn);
 	}
 }
