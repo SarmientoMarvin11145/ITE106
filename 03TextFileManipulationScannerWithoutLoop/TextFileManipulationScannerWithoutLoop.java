@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class ReadingEntireFileWithoutLoop
+public class TextFileManipulationScannerWithoutLoop
 {
 	public static void main(String [] args) throws FileNotFoundException{
 		File file = new File("file.txt");
