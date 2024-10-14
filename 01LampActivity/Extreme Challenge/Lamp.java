@@ -1,4 +1,4 @@
-public class Lamp3
+public class Lamp
 {
 	public String name;
 	public boolean isOn;
