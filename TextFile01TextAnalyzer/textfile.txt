@@ -1,0 +1,2 @@
+Hello, Dean Seven! This is my text file analyzer.
+I am Marvin Sarmiento, and this is my activity in ITE106 subject.
