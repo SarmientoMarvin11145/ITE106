@@ -13,28 +13,33 @@ public class TextFile01TextAnalyzer {
             int wordCount = 0;
             int sentenceCount = 0;
             String longestWord = "";
-            
+
             while ((line = br.readLine()) != null) {
                 text.append(line).append(" ");
-                               
-                line = line.replaceAll("[^a-zA-Z0-9\\s]", "");
-                         
+
+                line = line.replaceAll("[^a-zA-Z0-9.!?\\s]", "");
+
                 String[] words = line.split("\\s+");
                 for (String word : words) {
-                    if (word.length() > 0) {
+                    String cleanWord = word.replaceAll("[^a-zA-Z0-9]", "");
+                    if (cleanWord.length() > 0) {
                         wordCount++;
-                        if (word.length() > longestWord.length()) {
-                            longestWord = word;
+                        if (cleanWord.length() > longestWord.length()) {
+                            longestWord = cleanWord;
                         }
                     }
                 }
-                                
-                sentenceCount += line.split("[.!?]").length - 1;
+
+                for (char c : line.toCharArray()) {
+                    if (c == '.' || c == '!' || c == '?') {
+                        sentenceCount++;
+                    }
+                }
             }
             br.close();
-        
+
             String uppercaseText = text.toString().toUpperCase();
-          
+
             System.out.println("\n--- Text Analysis Results ---");
             System.out.println("Total Words: " + wordCount);
             System.out.println("Total Sentences: " + sentenceCount);
