@@ -23,16 +23,16 @@ Name,PhoneNumber
 
 Example: 
 Add Contact:
-Name: John Doe
-Phone: 1234567890
+Name: Marvin
+Phone: 09123456789
 
 Delete Contact:
-Name: John Doe
+Name: Marvin
 
 Search Contact:
-Name: John Doe
+Name: Marvin
 
 Update Contact:
-Name: John Doe
+Name: Marvin
 New Phone: 9876543210
 
